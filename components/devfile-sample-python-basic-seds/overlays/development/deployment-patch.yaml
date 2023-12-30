@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-seds
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-twhl-tenant/test-app-uawj/devfile-sample-python-basic-seds@sha256:8453cfd982af888460d502c241cf4b924775037d24b84b74efc5508983688f9c
+        name: my-python
+        resources: {}
+status: {}
